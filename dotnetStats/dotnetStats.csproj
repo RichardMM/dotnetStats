@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>dotnetStats</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Accord.Math" Version="3.8.0" />
+    <PackageReference Include="Google.OrTools" Version="6.10.6025" />
+  </ItemGroup>
+
+</Project>
