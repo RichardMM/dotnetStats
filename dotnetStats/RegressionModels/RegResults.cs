@@ -6,9 +6,15 @@ using System.Threading.Tasks;
 
 namespace dotnetStats.RegressionModels
 {
-    class RegResults
+    public class RegResults
     {
         public double[] Beta { get; }
         public double[][] CovarianceMatrix { get; }
+        public double[] estimates {get;}
+
+        public RegResults(double[][] x, double[] y, double[] parameters)
+        {
+
+        }
     }
 }

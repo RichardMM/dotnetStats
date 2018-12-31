@@ -5,9 +5,6 @@
 
     public class LinReg:RegressionAbstractClass
     {
-        public double[][] X { get; }
-        public double[] Y { get; }
-
         public LinReg(double[][] x, double[] y) : base(x, y) { }
 
         public double[] Fit()
