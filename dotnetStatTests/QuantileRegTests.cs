@@ -15,8 +15,8 @@ namespace dotnetStatTests
         [TestMethod]
         public void TestQuantileFit()
         {
-            string path = @"C:\Users\Richard\source\repos\dotnetStats\data\x.csv";
-            string Ypath = @"C:\Users\Richard\source\repos\dotnetStats\data\y.csv";
+            string path = @".\data\x.csv";
+            string Ypath = @".\data\y.csv";
             CsvReader reader = new CsvReader(path, hasHeaders: true);
             CsvReader Yreader = new CsvReader(Ypath, hasHeaders: true);
 
