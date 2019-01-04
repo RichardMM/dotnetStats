@@ -36,7 +36,7 @@ namespace dotnetStats.RegressionModels
         }
 
 
-        public RegResults Fit()
+        public override RegResults Fit()
         {
             //setup objective
             Objective objective = this.Solver.Objective();

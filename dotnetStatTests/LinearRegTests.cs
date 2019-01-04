@@ -23,13 +23,13 @@ namespace dotnetStatTests
                 new double[] {1, 06, 3, 46 }
             };
 
-            LinReg model = new LinReg(TestX, TestY);
-            double[] estimates = model.Fit();
-            foreach(double el in estimates)
+            OLS model = new OLS(TestX, TestY);
+            RegResults estimates = model.Fit();
+            foreach(double el in estimates.Beta)
             {
                 Console.Write(el + "\n");
             }
-            Assert.AreEqual(TestX[0].Length, estimates.Length);
+            Assert.AreEqual(TestX[0].Length, estimates.Beta.Length);
         }
         [TestMethod]
         public void TestEstimatesAccuracy()
@@ -44,14 +44,14 @@ namespace dotnetStatTests
                 new double[] {1, 06, 3, 46 }
             };
 
-            LinReg model = new LinReg(TestX, TestY);
-            double[] estimates = model.Fit();
+            OLS model = new OLS(TestX, TestY);
+            RegResults estimates = model.Fit();
             double[] TrueRes = new[] { 1.11242699480196,
                                        0.039030702408277,
                                        - 0.0119325883353133,
                                         0.114322210670513 };
             ApproxEqual EqualApproximately = TestUtils.ApproximatelyEqual;
-            estimates.Should().Equal(estimates, (left, right) => EqualApproximately(left, right, 0.001));
+            estimates.Beta.Should().Equal(estimates.Beta, (left, right) => EqualApproximately(left, right, 0.001));
         }
 
     }

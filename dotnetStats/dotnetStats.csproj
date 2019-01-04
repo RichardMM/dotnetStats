@@ -10,4 +10,8 @@
     <PackageReference Include="Google.OrTools" Version="6.10.6025" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="TimeSeries\" />
+  </ItemGroup>
+
 </Project>

@@ -6,6 +6,6 @@
         Double[][] X { get; }
         Double[] Y { get;}
 
-        
+        RegResults Fit();
     }
 }
