@@ -7,6 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="data\x.csv" />
+    <None Remove="data\y.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="data\x.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\y.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Accord.IO" Version="3.8.0" />
     <PackageReference Include="FluentAssertions" Version="5.5.3" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
@@ -16,15 +30,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\dotnetStats\dotnetStats.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="data\x.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="data\y.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
 
 </Project>
