@@ -11,7 +11,7 @@ variables:
   buildConfiguration: 'Release'
 
 pool:
-  vmImage:'macOS10.13'
+  vmImage:'vs2017-win2016'
 
 
 
