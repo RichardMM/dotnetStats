@@ -1,0 +1,8 @@
+variables:
+  buildConfiguration: 'Release'
+
+steps:
+- script: dotnet build --configuration $(buildConfiguration)
+  displayName: 'building'
+- script: dotnet test Tests/Tests.csproj
+  displayName: 'testing'
