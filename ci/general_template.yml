@@ -2,7 +2,7 @@ steps:
 - script: dotnet build --configuration $(buildConfiguration) 
   displayName: 'building'
 
-- script: dotnet test Tests/Tests.csproj
+- script: dotnet test Tests/Tests.csproj --logger trx
   displayName: 'testing'
 
 - task: PublishTestResults@2
