@@ -10,17 +10,20 @@ jobs:
   job: windows
   pool:
     vmImage: 'vs2017-win2016'
-  template: ci/general_template.yml
+  steps:
+    template: ci/general_template.yml
    
   job: ubuntu
   pool:
     vmImage: 'ubuntu-16.04'
-  template: ci/general_template.yml
+  steps:
+    template: ci/general_template.yml
  
   job: macos
   pool:
     vmImage: 'macOS-10.13'
-  template: ci/general_template.yml
+  steps:
+    template: ci/general_template.yml
  
 
 
