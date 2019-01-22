@@ -32,4 +32,13 @@
     <ProjectReference Include="..\dotnetStats\dotnetStats.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="data\glm\logit_x.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="data\glm\logit_y.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

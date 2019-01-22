@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using dotnetStats.RegressionModels;
 using FluentAssertions;
+
 namespace dotnetStatTests
 {
     /// <summary>
